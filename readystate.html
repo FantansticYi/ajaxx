@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax(接收响应)</title>
+</head>
+<body>
+<script>
+    var xhr = new XMLHttpRequest();
+    // xhr.onreadystatechange=function(){
+    //     if(this.readyState===4&&this.status===200){
+    //
+    //     }
+    xhr.addEventListener('readystatechange',function(){
+        if(this.readyState===4){
+            return console.log(this.readyState)
+        }
+    });
+    xhr.open('GET','');
+    xhr.send();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>online</title>
+</head>
+<body>
+<script>
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('GET','');
+    xhr.send();
+    xhr.onload=function{
+        console.log(this.readyState);
+        console.log(this.responseText)
+    }
+</script>
+</body>
+</html>
